@@ -1,0 +1,27 @@
+template
+	require(from="./pomodoro-clock.scss")
+	require(from="../fashion-clock/fashion-clock")
+	.pomodoro-clock(style="${'background-color:'+this.fillColor}")
+		.box-clock(click.trigger="this.refresh({isControlVisible:true})")
+			fashion-clock(
+				primary-color="${this.primaryColor}" 
+				secondary-color="${this.secondaryColor}"
+				minutes="${this.minutes}"
+				seconds="${this.seconds}"
+				hours="${this.hours}"
+			)
+		.box-control(if="this.isControlVisible")
+			.sub-box-control
+				label.display-minutes ${59 - this.minutes} minutes
+				input(value="${59 - this.minutes}" type="range" step="1" min="1" max="59" change.trigger="this.changeColorHandler")
+				label 
+					input(type="color" value="#43c6ac" change.bind="this.primaryColor")
+					span Primary color				
+				label
+					input(type="color" value="#191654" change.bind="this.secondaryColor")
+					span Secondary color
+				label
+					input(type="color" value="#191654" change.bind="this.fillColor")
+					span Fill color
+		div(class="${'box-backdrop'}" if="this.isControlVisible"  click.trigger="this.refresh({isControlVisible:false})")
+		
