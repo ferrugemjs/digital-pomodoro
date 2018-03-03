@@ -23,9 +23,12 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "extension-replace-loader": "0.0.1"
   },
   "dependencies": {
-    "extension-replace-loader": "0.0.1"
+    "es6-shim": "0.35.3",
+    "push.js": "^1.0.5",
+    "whatwg-fetch": "2.0.3"
   }
 }

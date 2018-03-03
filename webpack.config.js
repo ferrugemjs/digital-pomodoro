@@ -1,7 +1,7 @@
 var path = require('path');
 module.exports = {
     entry: {    
-    	app:['ferrugemjs/bootstrapper']
+    	app:['es6-shim','whatwg-fetch','ferrugemjs/bootstrapper']
     },
     output: {
         path: __dirname+'/public', 
