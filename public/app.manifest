@@ -5,7 +5,7 @@
     "icons": [
         {
             "src": "assets/pomodoro-digital.png",
-            "sizes" : "181x180",
+            "sizes" : "250x250",
             "type" : "image/png"
         }
     ]
