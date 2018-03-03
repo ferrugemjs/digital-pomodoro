@@ -1,6 +1,0 @@
-template
-	require(from="./fashion-clock.scss")
-	.fashion-clock(style="${'background: linear-gradient(to bottom, '+this.primaryColor+', '+this.secondaryColor+')'}")
-		.hour-box(style="${'width:'+this.hoursToPercent()+'%;height:'+this.hoursToPercent()+'%'}")
-			.minute-box(style="${'width:'+this.minutesToPercent()+'%;height:'+this.minutesToPercent()+'%'}")
-				.second-box(style="${'width:'+this.secondsToPercent()+'%;height:'+this.secondsToPercent()+'%'}")
