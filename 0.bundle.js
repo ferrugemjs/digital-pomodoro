@@ -177,13 +177,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(3), __webpack_require__(9), __webpack_require__(15)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _fashion_clock) {
 	var __fashion_clock_tmp = Object.keys(_fashion_clock)[0];
 	exports.default = function (super_clazz) {
-		function _clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp() {
+		function _clazz_sub_njduGefRpAERUV1VbOpk_k_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp.prototype.constructor = _clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp;
-		_clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "fashion-clock"], "dinamic": "\"style\",('background: linear-gradient(to bottom, '+$_this_$.primaryColor+', '+$_this_$.secondaryColor+')')" };
-		_clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp.prototype.render = function ($_this_$) {
+		_clazz_sub_njduGefRpAERUV1VbOpk_k_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_njduGefRpAERUV1VbOpk_k_tmp.prototype.constructor = _clazz_sub_njduGefRpAERUV1VbOpk_k_tmp;
+		_clazz_sub_njduGefRpAERUV1VbOpk_k_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "fashion-clock"], "dinamic": "\"style\",('background: linear-gradient(to bottom, '+$_this_$.primaryColor+', '+$_this_$.secondaryColor+')')" };
+		_clazz_sub_njduGefRpAERUV1VbOpk_k_tmp.prototype.render = function ($_this_$) {
 			_idom.elementOpen("div", null, ["class", "hour-box"], "style", 'width:' + $_this_$.hoursToPercent() + '%;height:' + $_this_$.hoursToPercent() + '%');
 
 			_idom.elementOpen("div", null, ["class", "minute-box"], "style", 'width:' + $_this_$.minutesToPercent() + '%;height:' + $_this_$.minutesToPercent() + '%');
@@ -196,7 +196,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 			_idom.elementClose("div");
 		};
-		return _clazz_sub_LkWj97T4aCSg0ldH3ToVKa_tmp;
+		return _clazz_sub_njduGefRpAERUV1VbOpk_k_tmp;
 	}(_fashion_clock[__fashion_clock_tmp]);
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -209,26 +209,26 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(3), __webpack_require__(13)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _pomodoro_clock) {
-	var __mod__KIlkbZfMo6kZhEC5V_PCEP_tmp = "_tmp_constructor_no_view__mod__KIlkbZfMo6kZhEC5V_PCEP";
+	var __mod__wjcSGRvhUJBuTCmTA87phU_tmp = "_tmp_constructor_no_view__mod__wjcSGRvhUJBuTCmTA87phU";
 
 	var tmp_style = document.createElement('style');
 	tmp_style.type = 'text/css';
 	tmp_style.innerHTML = 'html,body,body > div,body > div > .init-app{  height:100%;  margin:0px;  padding:0px; }';
 	document.getElementsByTagName('head')[0].appendChild(tmp_style);exports.default = function (super_clazz) {
-		function _clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp() {
+		function _clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp.prototype.constructor = _clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp;
-		_clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "init-app"], "dinamic": "\"\"" };
-		_clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp.prototype.render = function ($_this_$) {
+		_clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp.prototype.constructor = _clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp;
+		_clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "init-app"], "dinamic": "\"\"" };
+		_clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp.prototype.render = function ($_this_$) {
 			(function () {
-				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _pomodoro_clock.default, "tag": "div", "alias": "pomodoro-clock", "target": "", "hostVars": {}, "staticVars": { "key:id": "tmp_key_inst_custom_compNks3iXTdPN5BbtiGDXJaki", "is": "pomodoro-clock" } });
+				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _pomodoro_clock.default, "tag": "div", "alias": "pomodoro-clock", "target": "", "hostVars": {}, "staticVars": { "key:id": "tmp_key_inst_custom_compPghOhPk_deWSdaGI0kxGBl", "is": "pomodoro-clock" } });
 
 				_libfjs_mod_.default.reDraw.call(_$_inst_$_);
 			})();
 		};
-		return _clazz_sub_smzED0kleuvDNXuJCO2_8p_tmp;
+		return _clazz_sub_oCzKw1FZZu3GOdx1UhNV0o_tmp;
 	}(function () {});
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -243,17 +243,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(3), __webpack_require__(10), __webpack_require__(11), __webpack_require__(16)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _pomodoro_clock, _fashion_clock) {
 	var __pomodoro_clock_tmp = Object.keys(_pomodoro_clock)[0];
 	exports.default = function (super_clazz) {
-		function _clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp() {
+		function _clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp.prototype.constructor = _clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp;
-		_clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "pomodoro-clock"], "dinamic": "\"style\",('background-color:'+$_this_$.fillColor)" };
-		_clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp.prototype.render = function ($_this_$) {
+		_clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp.prototype.constructor = _clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp;
+		_clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "pomodoro-clock"], "dinamic": "\"style\",('background-color:'+$_this_$.fillColor)" };
+		_clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp.prototype.render = function ($_this_$) {
 			_idom.elementOpen("div", null, ["class", "box-clock"], "onclick", $_this_$.refresh.bind($_this_$, { isControlVisible: true }));
 
 			(function () {
-				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _fashion_clock.default, "tag": "div", "alias": "fashion-clock", "target": "", "hostVars": { "primary-color": $_this_$.primaryColor, "secondary-color": $_this_$.secondaryColor, "minutes": $_this_$.minutes, "seconds": $_this_$.seconds, "hours": $_this_$.hours }, "staticVars": { "key:id": "tmp_key_inst_custom_compUuOTDSLPMajiDKWrKi2bT9", "is": "fashion-clock" } });
+				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _fashion_clock.default, "tag": "div", "alias": "fashion-clock", "target": "", "hostVars": { "primary-color": $_this_$.primaryColor, "secondary-color": $_this_$.secondaryColor, "minutes": $_this_$.minutes, "seconds": $_this_$.seconds, "hours": $_this_$.hours }, "staticVars": { "key:id": "tmp_key_inst_custom_compPhC3DlLxgk8fx3knBOHnH2", "is": "fashion-clock" } });
 
 				_libfjs_mod_.default.reDraw.call(_$_inst_$_);
 			})();
@@ -336,7 +336,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 				_idom.elementClose("div");
 			};
 		};
-		return _clazz_sub_pRHOScjE7EIm_nOtocxj8s_tmp;
+		return _clazz_sub_Fhma5oAzULkl7ntA0A2HMb_tmp;
 	}(_pomodoro_clock[__pomodoro_clock_tmp]);
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
