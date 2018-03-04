@@ -1,4 +1,4 @@
-import push from "push.js";
+import * as Push from "push.js";
 
 export class PomodoroClock{
 	constructor(){
@@ -34,14 +34,15 @@ export class PomodoroClock{
 			}
 			if(this.minutes >= this.configuredMinutes){
 				this.calculateTime();
-				push.create("Hello world!", {
+				Push.default.create("It's time to!", {
 					body: this.message,
-					icon: 'assets/bell_32x32.png',
+					//icon: 'assets/bell_32x32.png',
 					timeout: 4000,
-						onClick: function () {
-							window.focus();
-							this.close();
-						}
+					vibrate: [200, 100, 200, 100, 200, 100, 200],
+					onClick: function () {
+						window.focus();
+						this.close();
+					}
 				});
 			}
 		}
