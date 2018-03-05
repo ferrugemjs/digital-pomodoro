@@ -2,6 +2,7 @@ template
 	require(from="./pomodoro-clock.scss")
 	require(from="../fashion-clock/fashion-clock")
 	.pomodoro-clock(style="${'background-color:'+this.fillColor}")
+		h2.product-name DigiPomodoro
 		.box-clock(click.trigger="this.refresh({isControlVisible:true})")
 			fashion-clock(
 				primary-color="${this.primaryColor}" 
@@ -24,6 +25,17 @@ template
 					span Secondary color
 				label
 					input(type="color" value="${this.fillColor}" change.bind="this.fillColor")
-					span Fill color	
-		div(class="${'box-backdrop'}" if="this.isControlVisible"  click.trigger="this.refresh({isControlVisible:false})")
+					span Fill color
+				label(style="text-align:right;font-size:10px")
+					| DigiPomodoro v-1.0.2
+		.box-message(if="this.isNotifying" click.trigger="this.reStart")
+			.sub-box-message 
+				h2 ${this.message}
+				audio(autoplay)
+					source(src="assets/computer-magic.mp3" type="audio/mpeg")
+		.box-backdrop(if="this.isControlVisible"  click.trigger="this.refresh({isControlVisible:false})")
+		.pomodoro-footer
+			| DigiPomodoro is made with 
+			a(href="https://ferrugemjs.github.io/home-page/") ferrugemjs
+
 		

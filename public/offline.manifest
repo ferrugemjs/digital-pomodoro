@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#v3
+#v4
 
 CACHE:
 bundle.js
@@ -8,6 +8,7 @@ bundle.js
 assets/pomodoro-digital.png
 assets/favicon.png
 assets/bell_32x32.png
+assets/computer-magic.mp3
 
 NETWORK:
 *

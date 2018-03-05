@@ -11,6 +11,7 @@ export class PomodoroClock{
 		this.intervalId = null;
 		this.configuredMinutes = 10;
 		this.message = "it's time to pause!";
+		this.isNotifying = false;
 	}
 	changeMinutesHandler({target}){
 		if(target && target.value){
@@ -33,10 +34,13 @@ export class PomodoroClock{
 				this.minutes = 0;
 			}
 			if(this.minutes >= this.configuredMinutes){
+				this.minutes = 0;
 				this.calculateTime();
+				this.stop();
+				this.isNotifying = true;
 				Push.default.create("It's time to!", {
 					body: this.message,
-					//icon: 'assets/bell_32x32.png',
+					icon: 'assets/pomodoro-digital.png',
 					timeout: 4000,
 					vibrate: [200, 100, 200, 100, 200, 100, 200],
 					onClick: function () {
@@ -54,6 +58,22 @@ export class PomodoroClock{
 		} 		
 	}
 	connectedCallback(){
+		this.start();
+	}
+	disconnectedCallback(){
+		this.stop();	
+	}
+	reStart(){
+		this.isNotifying = false;
+		this.start();
+	}
+	stop(){
+		if(this.intervalId){
+			clearInterval(this.intervalId);
+		}	
+	}
+	start(){
+		this.stop();
 		if(this.getCookie('configured-minutes')){
 			this.configuredMinutes = Number(this.getCookie('configured-minutes'));
 		}
@@ -71,11 +91,6 @@ export class PomodoroClock{
 		}
 		this.calculateTime();
 		this.intervalId = setInterval(this.incrementTime.bind(this),1000);
-	}
-	disconnectedCallback(){
-		if(this.intervalId){
-			clearInterval(this.intervalId);
-		}	
 	}
 	setCookie(cname, cvalue, exdays) {
 		let d = new Date();
