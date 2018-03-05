@@ -271,18 +271,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(6), __webpack_require__(12), __webpack_require__(18)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _fashion_clock) {
 	var __fashion_clock_tmp = Object.keys(_fashion_clock)[0];
 	exports.default = function (super_clazz) {
-		function _clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp() {
+		function _clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp.prototype.constructor = _clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp;
-		_clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "fashion-clock"], "dinamic": "\"style\",('background: linear-gradient(to bottom, '+$_this_$.primaryColor+', '+$_this_$.secondaryColor+')')" };
-		_clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp.prototype.render = function ($_this_$) {
-			_idom.elementOpen("div", null, ["class", "hour-box"], "style", 'width:' + $_this_$.hoursToPercent() + '%;height:' + $_this_$.hoursToPercent() + '%');
+		_clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp.prototype.constructor = _clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp;
+		_clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "fashion-clock"], "dinamic": "\"style\",('background: linear-gradient(to bottom, '+$_this_$.primaryColor+', '+$_this_$.secondaryColor+')')" };
+		_clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp.prototype.render = function ($_this_$) {
+			_idom.elementOpen("div", 'bJx79kHnvI30tbK4SUFlWv', ["class", "hour-box"], "style", 'width:' + $_this_$.hoursToPercent() + '%;height:' + $_this_$.hoursToPercent() + '%');
 
-			_idom.elementOpen("div", null, ["class", "minute-box"], "style", 'width:' + $_this_$.minutesToPercent() + '%;height:' + $_this_$.minutesToPercent() + '%');
+			_idom.elementOpen("div", 'turs2nNXn6FF0dzvOibbEU', ["class", "minute-box"], "style", 'width:' + $_this_$.minutesToPercent() + '%;height:' + $_this_$.minutesToPercent() + '%');
 
-			_idom.elementOpen("div", null, ["class", "second-box"], "style", 'width:' + $_this_$.secondsToPercent() + '%;height:' + $_this_$.secondsToPercent() + '%');
+			_idom.elementOpen("div", 'idrh1uRbbCnNjr_0prTbDG', ["class", "second-box"], "style", 'width:' + $_this_$.secondsToPercent() + '%;height:' + $_this_$.secondsToPercent() + '%');
 
 			_idom.elementClose("div");
 
@@ -290,7 +290,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 			_idom.elementClose("div");
 		};
-		return _clazz_sub_OZETSPd5H9M5rZ1bO6ojkr_tmp;
+		return _clazz_sub_fvudSG1a20ksFiw5iAdV4t_tmp;
 	}(_fashion_clock[__fashion_clock_tmp]);
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -303,26 +303,26 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(6), __webpack_require__(16)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _pomodoro_clock) {
-	var __mod__ruddhZ9ien8nCZMEh08Ahu_tmp = "_tmp_constructor_no_view__mod__ruddhZ9ien8nCZMEh08Ahu";
+	var __mod__FXvV79G85S8NJvbpFN446K_tmp = "_tmp_constructor_no_view__mod__FXvV79G85S8NJvbpFN446K";
 
 	var tmp_style = document.createElement('style');
 	tmp_style.type = 'text/css';
 	tmp_style.innerHTML = 'html,body,body > div,body > div > .init-app{  height:100%;  margin:0px;  padding:0px; }';
 	document.getElementsByTagName('head')[0].appendChild(tmp_style);exports.default = function (super_clazz) {
-		function _clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp() {
+		function _clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp.prototype.constructor = _clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp;
-		_clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "init-app"], "dinamic": "\"\"" };
-		_clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp.prototype.render = function ($_this_$) {
+		_clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp.prototype.constructor = _clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp;
+		_clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "init-app"], "dinamic": "\"\"" };
+		_clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp.prototype.render = function ($_this_$) {
 			(function () {
-				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _pomodoro_clock.default, "tag": "div", "alias": "pomodoro-clock", "target": "", "hostVars": {}, "staticVars": { "key:id": "tmp_key_inst_custom_compODCZ17VdjjcVvUZ1K6z8WB", "is": "pomodoro-clock" } });
+				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _pomodoro_clock.default, "tag": "div", "alias": "pomodoro-clock", "target": "", "hostVars": {}, "staticVars": { "key:id": "tmp_key_inst_custom_compusvuZ33x_v4rZ9OSrVuKp6", "is": "pomodoro-clock" } });
 
 				_libfjs_mod_.default.reDraw.call(_$_inst_$_);
 			})();
 		};
-		return _clazz_sub_VreVPeg_EeH82dT6SGRvoo_tmp;
+		return _clazz_sub_Ptnufjul63k1VS7MLB70SC_tmp;
 	}(function () {});
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -337,23 +337,23 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(6), __webpack_require__(13), __webpack_require__(14), __webpack_require__(19)], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports, _idom, _libfjs_mod_, _pomodoro_clock, _fashion_clock) {
 	var __pomodoro_clock_tmp = Object.keys(_pomodoro_clock)[0];
 	exports.default = function (super_clazz) {
-		function _clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp() {
+		function _clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp() {
 			super_clazz.call(this);
 		};
-		_clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp.prototype = Object.create(super_clazz.prototype);
-		_clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp.prototype.constructor = _clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp;
-		_clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "pomodoro-clock"], "dinamic": "\"style\",('background-color:'+$_this_$.fillColor)" };
-		_clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp.prototype.render = function ($_this_$) {
-			_idom.elementOpen("h1", null, ["class", "product-name"], "");
+		_clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp.prototype = Object.create(super_clazz.prototype);
+		_clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp.prototype.constructor = _clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp;
+		_clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp.prototype._$attrs$_ = { "name": "div", "static": ["class", "pomodoro-clock"], "dinamic": "\"style\",('background-color:'+$_this_$.fillColor)" };
+		_clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp.prototype.render = function ($_this_$) {
+			_idom.elementOpen("h2", 'kiB20sET05MUPs1rR6TgRn', ["class", "product-name"], "");
 
-			_idom.text("DigPomodoro ");
+			_idom.text("DigiPomodoro");
 
-			_idom.elementClose("h1");
+			_idom.elementClose("h2");
 
-			_idom.elementOpen("div", null, ["class", "box-clock"], "onclick", $_this_$.refresh.bind($_this_$, { isControlVisible: true }));
+			_idom.elementOpen("div", 'bsMwv4le6CvnzckkLem3TB', ["class", "box-clock"], "onclick", $_this_$.refresh.bind($_this_$, { isControlVisible: true }));
 
 			(function () {
-				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _fashion_clock.default, "tag": "div", "alias": "fashion-clock", "target": "", "hostVars": { "primary-color": $_this_$.primaryColor, "secondary-color": $_this_$.secondaryColor, "minutes": $_this_$.minutes, "seconds": $_this_$.seconds, "hours": $_this_$.hours }, "staticVars": { "key:id": "tmp_key_inst_custom_compVno65IZS9sXLtODEpl94HR", "is": "fashion-clock" } });
+				var _$_inst_$_ = _libfjs_mod_.default.build({ "classFactory": _fashion_clock.default, "tag": "div", "alias": "fashion-clock", "target": "", "hostVars": { "primary-color": $_this_$.primaryColor, "secondary-color": $_this_$.secondaryColor, "minutes": $_this_$.minutes, "seconds": $_this_$.seconds, "hours": $_this_$.hours }, "staticVars": { "key:id": "tmp_key_inst_custom_compZvwwIlnpbiL9r8P2MLk_kL", "is": "fashion-clock" } });
 
 				_libfjs_mod_.default.reDraw.call(_$_inst_$_);
 			})();
@@ -362,13 +362,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 			if ($_this_$.isControlVisible) {
 
-				_idom.elementOpen("div", null, ["class", "box-control"], "");
+				_idom.elementOpen("div", 'hHndvZNfkdk9hZnj1f0NzT', ["class", "box-control"], "");
 
-				_idom.elementOpen("div", null, ["class", "sub-box-control"], "");
+				_idom.elementOpen("div", 'WSjGSVzXdeZveeCIzaewLe', ["class", "sub-box-control"], "");
 
-				_idom.elementOpen("label", null, ["class", "display-message"], "");
+				_idom.elementOpen("label", 'aWiKuVSDMnKfNXxjHA0lmD', ["class", "display-message"], "");
 
-				_idom.elementOpen("textarea", null, [""], "onchange", function ($evt) {
+				_idom.elementOpen("textarea", 'kkJRBGleGNUvWTOaBesm_G', [""], "onchange", function ($evt) {
 					$_this_$.refresh({ "message": $evt.target.value });
 				});
 
@@ -378,25 +378,25 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 				_idom.elementClose("label");
 
-				_idom.elementOpen("label", null, ["class", "display-minutes"], "");
+				_idom.elementOpen("label", 'EgfAXK8IkijVXDCL7lSjRx', ["class", "display-minutes"], "");
 
 				_idom.text("" + $_this_$.configuredMinutes + " minutes");
 
 				_idom.elementClose("label");
 
-				_idom.elementOpen("input", null, ["type", "range", "step", "1", "min", "1", "max", "59"], "value", 59 - $_this_$.minutes, "onchange", $_this_$.changeMinutesHandler.bind($_this_$));
+				_idom.elementOpen("input", 'bgjz5ke45greedC6ghzKfa', ["type", "range", "step", "1", "min", "1", "max", "59"], "value", 59 - $_this_$.minutes, "onchange", $_this_$.changeMinutesHandler.bind($_this_$));
 
 				_idom.elementClose("input");
 
-				_idom.elementOpen("label", null, [""], "");
+				_idom.elementOpen("label", 'DjUnikUvBmSwsDbW2039xR', [""], "");
 
-				_idom.elementOpen("input", null, ["type", "color"], "value", $_this_$.primaryColor, "onchange", function ($evt) {
+				_idom.elementOpen("input", 'KeX61khEawACJt2RSkWoft', ["type", "color"], "value", $_this_$.primaryColor, "onchange", function ($evt) {
 					$_this_$.refresh({ "primaryColor": $evt.target.value });
 				});
 
 				_idom.elementClose("input");
 
-				_idom.elementOpen("span", null, [""], "");
+				_idom.elementOpen("span", 'fdddi0il8xndti8LdRNr1A', [""], "");
 
 				_idom.text("Primary color    ");
 
@@ -404,15 +404,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 				_idom.elementClose("label");
 
-				_idom.elementOpen("label", null, [""], "");
+				_idom.elementOpen("label", 'rDz7kom03ZdCS0HSVKm5SK', [""], "");
 
-				_idom.elementOpen("input", null, ["type", "color"], "value", $_this_$.secondaryColor, "onchange", function ($evt) {
+				_idom.elementOpen("input", 'fHk4nnZ8SkOzwsCwAHcGJD', ["type", "color"], "value", $_this_$.secondaryColor, "onchange", function ($evt) {
 					$_this_$.refresh({ "secondaryColor": $evt.target.value });
 				});
 
 				_idom.elementClose("input");
 
-				_idom.elementOpen("span", null, [""], "");
+				_idom.elementOpen("span", 'fEk8HhcM59pgi2X91v1K4N', [""], "");
 
 				_idom.text("Secondary color");
 
@@ -420,15 +420,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 				_idom.elementClose("label");
 
-				_idom.elementOpen("label", null, [""], "");
+				_idom.elementOpen("label", 'egu3WoPBtrjcXZgeG11mr7', [""], "");
 
-				_idom.elementOpen("input", null, ["type", "color"], "value", $_this_$.fillColor, "onchange", function ($evt) {
+				_idom.elementOpen("input", 'eHc8IsM9o0ORLjTTWJj8KH', ["type", "color"], "value", $_this_$.fillColor, "onchange", function ($evt) {
 					$_this_$.refresh({ "fillColor": $evt.target.value });
 				});
 
 				_idom.elementClose("input");
 
-				_idom.elementOpen("span", null, [""], "");
+				_idom.elementOpen("span", 'wXP0D716L5nLwlfkK5bGiV', [""], "");
 
 				_idom.text("Fill color");
 
@@ -436,9 +436,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 				_idom.elementClose("label");
 
-				_idom.elementOpen("label", null, ["style", "text-align:right;font-size:10px;"], "");
+				_idom.elementOpen("label", 'SsnWm58ElRv2Zak213OP51', ["style", "text-align:right;font-size:10px;"], "");
 
-				_idom.text("DigiPomodoro v-1.0.1");
+				_idom.text("DigiPomodoro v-1.0.2");
 
 				_idom.elementClose("label");
 
@@ -449,19 +449,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 			if ($_this_$.isNotifying) {
 
-				_idom.elementOpen("div", null, ["class", "box-message"], "onclick", $_this_$.reStart.bind($_this_$));
+				_idom.elementOpen("div", 'vzalkoB5OiA8kv5wblT4Lv', ["class", "box-message"], "onclick", $_this_$.reStart.bind($_this_$));
 
-				_idom.elementOpen("div", null, ["class", "sub-box-message"], "");
+				_idom.elementOpen("div", 'gKBdLBooSuHVz1xgZo4w8n', ["class", "sub-box-message"], "");
 
-				_idom.elementOpen("h2", null, [""], "");
+				_idom.elementOpen("h2", 'ZsVwXkLc7WNkTf5hjhbjkd', [""], "");
 
 				_idom.text("" + $_this_$.message + "");
 
 				_idom.elementClose("h2");
 
-				_idom.elementOpen("audio", null, ["autoplay", "autoplay"], "");
+				_idom.elementOpen("audio", 'OKXcS9o4a_XFu5ZOZGGZCD', ["autoplay", "autoplay"], "");
 
-				_idom.elementOpen("source", null, ["src", "assets/computer-magic.mp3", "type", "audio/mpeg"], "");
+				_idom.elementOpen("source", 'PPg_L1iXkr7G5x74ZUnZIT', ["src", "assets/computer-magic.mp3", "type", "audio/mpeg"], "");
 
 				_idom.elementClose("source");
 
@@ -472,26 +472,26 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 				_idom.elementClose("div");
 			};
 
-			_idom.elementOpen("div", null, ["class", "pomodoro-footer"], "");
+			if ($_this_$.isControlVisible) {
 
-			_idom.text(" Made with ");
+				_idom.elementOpen("div", 'MctEpkaNUZ2vbKRn6n2Wxd', ["class", "box-backdrop"], "onclick", $_this_$.refresh.bind($_this_$, { isControlVisible: false }));
 
-			_idom.elementOpen("a", null, ["href", "https://ferrugemjs.github.io/home-page/"], "");
+				_idom.elementClose("div");
+			};
+
+			_idom.elementOpen("div", 'FAKI95bugHWF2CMs_G7bLT', ["class", "pomodoro-footer"], "");
+
+			_idom.text("DigiPomodoro is made with ");
+
+			_idom.elementOpen("a", 'lTPUSWmskT4z_oE6OvHe1Z', ["href", "https://ferrugemjs.github.io/home-page/"], "");
 
 			_idom.text("ferrugemjs");
 
 			_idom.elementClose("a");
 
 			_idom.elementClose("div");
-
-			if ($_this_$.isControlVisible) {
-
-				_idom.elementOpen("div", null, [""], "class", 'box-backdrop', "onclick", $_this_$.refresh.bind($_this_$, { isControlVisible: false }));
-
-				_idom.elementClose("div");
-			};
 		};
-		return _clazz_sub_AcPP0S2KRLUkm6UWF46a0V_tmp;
+		return _clazz_sub_BdkKox1iHLmkrAwLK9rxNm_tmp;
 	}(_pomodoro_clock[__pomodoro_clock_tmp]);
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -1022,7 +1022,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, ".pomodoro-clock {\n  width: 100%;\n  height: 100%; }\n  .pomodoro-clock > .product-name {\n    margin-top: 20px;\n    color: #efefef;\n    text-align: center;\n    text-shadow: 0 2px 2px #000;\n    font-family: sans-serif; }\n  .pomodoro-clock > .pomodoro-footer {\n    color: #efefef;\n    text-align: right;\n    text-shadow: 0 2px 2px #000;\n    font-family: sans-serif;\n    font-size: 12px;\n    position: absolute;\n    bottom: 0px;\n    width: 100%;\n    padding: 10px 10px 10px 0px;\n    box-sizing: border-box; }\n  .pomodoro-clock > .box-clock {\n    width: 80vw;\n    height: 80vw;\n    padding: 0;\n    padding-top: 20px;\n    margin: 0px auto; }\n  .pomodoro-clock > .box-control {\n    color: #fff;\n    width: 80%;\n    margin-left: 10%;\n    background-color: #929494;\n    border-radius: 5px;\n    margin-top: 260px;\n    z-index: 15;\n    position: absolute;\n    bottom: 40px; }\n    .pomodoro-clock > .box-control > .sub-box-control {\n      padding: 10px 40px 10px 40px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label.display-minutes {\n        text-align: center;\n        font-size: 1.5rem;\n        font-family: verdana;\n        margin-bottom: 5px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label.display-message > textarea {\n        width: 100%;\n        text-align: center;\n        font-size: 1.5rem;\n        font-family: verdana;\n        margin-bottom: 5px;\n        background-color: transparent;\n        border: none;\n        color: #fff; }\n      .pomodoro-clock > .box-control > .sub-box-control > input[type=\"range\"] {\n        width: 100%;\n        padding: 0px;\n        margin: 0px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label {\n        display: block;\n        width: 100%; }\n        .pomodoro-clock > .box-control > .sub-box-control > label > input[type=\"color\"] {\n          width: 45px;\n          background-color: transparent;\n          border: none; }\n        .pomodoro-clock > .box-control > .sub-box-control > label > span {\n          vertical-align: top; }\n  .pomodoro-clock > .box-message {\n    color: #fff;\n    width: 80%;\n    margin-left: 10%;\n    background-color: #929494;\n    border-radius: 5px;\n    margin-top: 260px;\n    z-index: 15;\n    position: absolute;\n    bottom: 40px; }\n    .pomodoro-clock > .box-message > .sub-box-message {\n      padding: 10px 40px 10px 40px; }\n      .pomodoro-clock > .box-message > .sub-box-message > h2 {\n        text-align: center; }\n    .pomodoro-clock > .box-message.is-hangout {\n      -webkit-transition: opacity 3s ease-in-out;\n      -moz-transition: opacity 3s ease-in-out;\n      -ms-transition: opacity 3s ease-in-out;\n      -o-transition: opacity 3s ease-in-out;\n      transition: opacity 3s ease-in-out;\n      opacity: 0; }\n  .pomodoro-clock > .box-backdrop {\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    bottom: 0px;\n    right: 0px;\n    background-color: rgba(250, 250, 250, 0.6);\n    z-index: 14; }\n", ""]);
+exports.push([module.i, ".pomodoro-clock {\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n  .pomodoro-clock > .product-name {\n    margin-top: 20px;\n    color: #efefef;\n    text-align: center;\n    text-shadow: 0 2px 2px #000;\n    font-family: sans-serif; }\n  .pomodoro-clock > .pomodoro-footer {\n    color: #efefef;\n    text-align: right;\n    text-shadow: 0 2px 2px #000;\n    font-family: sans-serif;\n    font-size: 12px;\n    position: absolute;\n    bottom: 0px;\n    width: 100%;\n    padding: 10px 10px 10px 0px;\n    box-sizing: border-box; }\n  .pomodoro-clock > .box-clock {\n    width: 80vw;\n    height: 80vw;\n    padding: 0;\n    padding-top: 20px;\n    margin: 0px auto; }\n  .pomodoro-clock > .box-control {\n    color: #fff;\n    width: 80%;\n    margin-left: 10%;\n    background-color: #929494;\n    border-radius: 5px;\n    margin-top: 260px;\n    z-index: 15;\n    position: absolute;\n    bottom: 40px; }\n    .pomodoro-clock > .box-control > .sub-box-control {\n      padding: 10px 40px 10px 40px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label.display-minutes {\n        text-align: center;\n        font-size: 1.5rem;\n        font-family: verdana;\n        margin-bottom: 5px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label.display-message > textarea {\n        width: 100%;\n        text-align: center;\n        font-size: 1.5rem;\n        font-family: verdana;\n        margin-bottom: 5px;\n        background-color: transparent;\n        border: none;\n        color: #fff; }\n      .pomodoro-clock > .box-control > .sub-box-control > input[type=\"range\"] {\n        width: 100%;\n        padding: 0px;\n        margin: 0px; }\n      .pomodoro-clock > .box-control > .sub-box-control > label {\n        display: block;\n        width: 100%; }\n        .pomodoro-clock > .box-control > .sub-box-control > label > input[type=\"color\"] {\n          width: 45px;\n          background-color: transparent;\n          border: none; }\n        .pomodoro-clock > .box-control > .sub-box-control > label > span {\n          vertical-align: top; }\n  .pomodoro-clock > .box-message {\n    color: #fff;\n    width: 80%;\n    margin-left: 10%;\n    background-color: #929494;\n    border-radius: 5px;\n    margin-top: 260px;\n    z-index: 15;\n    position: absolute;\n    bottom: 40px; }\n    .pomodoro-clock > .box-message > .sub-box-message {\n      padding: 10px 40px 10px 40px; }\n      .pomodoro-clock > .box-message > .sub-box-message > h2 {\n        text-align: center; }\n    .pomodoro-clock > .box-message.is-hangout {\n      -webkit-transition: opacity 3s ease-in-out;\n      -moz-transition: opacity 3s ease-in-out;\n      -ms-transition: opacity 3s ease-in-out;\n      -o-transition: opacity 3s ease-in-out;\n      transition: opacity 3s ease-in-out;\n      opacity: 0; }\n  .pomodoro-clock > .box-backdrop {\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    bottom: 0px;\n    right: 0px;\n    background-color: rgba(250, 250, 250, 0.6);\n    z-index: 14; }\n", ""]);
 
 // exports
 
