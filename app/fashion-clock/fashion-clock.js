@@ -1,7 +1,5 @@
 export class FashionClock{
 	constructor(){
-		this.primaryColor = '#6A82FB';
-		this.secondaryColor = '#FC5C7D';
 		this.hours = 23;
 		this.minutes = 49;
 		this.seconds = 0;

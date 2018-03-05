@@ -1,33 +1,29 @@
 template
 	require(from="./pomodoro-clock.scss")
 	require(from="../fashion-clock/fashion-clock")
-	.pomodoro-clock(style="${'background-color:'+this.fillColor}")
-		h2.product-name DigiPomodoro
+	.pomodoro-clock(style="${'background: linear-gradient(to bottom, '+this.primaryColor+', '+this.secondaryColor+')'}")
+		.pomodoro-header
+			h2.product-name DigiPomodoro
 		.box-clock(click.trigger="this.refresh({isControlVisible:true})")
 			fashion-clock(
-				primary-color="${this.primaryColor}" 
-				secondary-color="${this.secondaryColor}"
-				minutes="${this.minutes}"
-				seconds="${this.seconds}"
+				minutes="${59 - this.minutes}"
+				seconds="${59 - this.seconds}"
 				hours="${this.hours}"
 			)
-		.box-control(if="this.isControlVisible")
+		div(class="${'box-control '+(this.isControlVisible ? 'is-visible':'')}")
 			.sub-box-control
 				label.display-message
 					textarea(change.bind="this.message") ${this.message}
 				label.display-minutes ${this.configuredMinutes} minutes
-				input(value="${59 - this.minutes}" type="range" step="1" min="1" max="59" change.trigger="this.changeMinutesHandler")
+				input(value="${this.configuredMinutes}" type="range" step="1" min="1" max="59" change.trigger="this.changeMinutesHandler")
 				label 
 					input(type="color" value="${this.primaryColor}" change.bind="this.primaryColor")
 					span Primary color				
 				label
 					input(type="color" value="${this.secondaryColor}" change.bind="this.secondaryColor")
 					span Secondary color
-				label
-					input(type="color" value="${this.fillColor}" change.bind="this.fillColor")
-					span Fill color
 				label(style="text-align:right;font-size:10px")
-					| DigiPomodoro v-1.0.2
+					| DigiPomodoro v-1.1.0
 		.box-message(if="this.isNotifying" click.trigger="this.reStart")
 			.sub-box-message 
 				h2 ${this.message}

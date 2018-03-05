@@ -4,7 +4,6 @@ export class PomodoroClock{
 	constructor(){
 		this.primaryColor = "#43c6ac";
 		this.secondaryColor = "#191654";
-		this.fillColor = "#efefef";
 		this.hours = 24;
 		this.minutes = 10;
 		this.seconds = 0;
@@ -23,31 +22,30 @@ export class PomodoroClock{
 		}
 	}
 	calculateTime(){
-		this.minutes = 59 - this.configuredMinutes;
+		this.minutes = this.configuredMinutes;
 	}
-	incrementTime(){
-		this.seconds++;
-		if(this.seconds > 59){
-			this.seconds = 0;
-			this.minutes++;
-			if(this.minutes > 59){
-				this.minutes = 0;
-			}
-			if(this.minutes >= this.configuredMinutes){
-				this.minutes = 0;
+	decrementTime(){
+		this.seconds--;
+		if(this.seconds < 0){
+			this.seconds = 59;
+			this.minutes--;
+			if(this.minutes < 0){
+				//this.minutes = 0;
 				this.calculateTime();
 				this.stop();
 				this.isNotifying = true;
-				Push.default.create("It's time to!", {
-					body: this.message,
-					icon: 'assets/pomodoro-digital.png',
-					timeout: 4000,
-					vibrate: [200, 100, 200, 100, 200, 100, 200],
-					onClick: function () {
-						window.focus();
-						this.close();
-					}
-				});
+				if(Push.default.Permission.has()){
+					Push.default.create("It's time to!", {
+						body: this.message,
+						icon: 'assets/pomodoro-digital.png',
+						timeout: 4000,
+						vibrate: [200, 100, 200, 100, 200, 100, 200],
+						onClick: function () {
+							window.focus();
+							this.close();
+						}
+					});					
+				}
 			}
 		}
 		this.refresh();
@@ -59,6 +57,10 @@ export class PomodoroClock{
 	}
 	connectedCallback(){
 		this.start();
+		//not ask for permision any time to user
+		if(!Push.default.Permission.has() || Push.default.Permission.get() ==! Push.default.Permission.DENIED){
+			Push.Permission.request(() => {});
+		}		
 	}
 	disconnectedCallback(){
 		this.stop();	
@@ -77,9 +79,6 @@ export class PomodoroClock{
 		if(this.getCookie('configured-minutes')){
 			this.configuredMinutes = Number(this.getCookie('configured-minutes'));
 		}
-		if(this.getCookie('configured-fillcolor')){
-			this.fillColor = this.getCookie('configured-fillcolor');
-		}
 		if(this.getCookie('configured-primarycolor')){
 			this.primaryColor = this.getCookie('configured-primarycolor');
 		}
@@ -90,7 +89,7 @@ export class PomodoroClock{
 			this.message = this.getCookie('configured-message');
 		}
 		this.calculateTime();
-		this.intervalId = setInterval(this.incrementTime.bind(this),1000);
+		this.intervalId = setInterval(this.decrementTime.bind(this),1000);
 	}
 	setCookie(cname, cvalue, exdays) {
 		let d = new Date();
