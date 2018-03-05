@@ -2,6 +2,7 @@
     "name": "DigiPomodoro",
     "start_url" : "./",
     "display": "standalone",
+    "orientation":"portrait",
     "icons": [
         {
             "src": "assets/pomodoro-digital.png",
