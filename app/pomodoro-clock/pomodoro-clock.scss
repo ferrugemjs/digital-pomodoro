@@ -11,22 +11,29 @@
 		>.product-name{
 			margin-top:40px;
 			color: #efefef;
-			text-align: center;
+			text-align: left;
 			font-family: sans-serif;
+			>.toggle-menu{
+				margin-left:10px;
+				margin-right:10px;
+			}
 		}
 	}
 
 	>.pomodoro-footer{
 		color: #efefef;
-		text-align: right;
+		text-align: center;
 		text-shadow: 0 2px 2px #000;
 		font-family: sans-serif;
 		font-size: 12px;
 		position:absolute;
 		bottom: 0px;
 		width: 100%;
-		padding:10px 10px 10px 0px;
-		box-sizing:border-box;
+		>h5{
+			>a{
+				color:#efefef;
+			}			
+		} 
 
 	}
 	>.box-clock{
@@ -40,10 +47,7 @@
 		transition: bottom .3s;		
 		color:#4a4444;
 		width:100%;
-		//margin-left:10%;
 		background-color:#efefef;
-		//border-radius:5px;
-		margin-top:260px;
 		z-index:15;
 		position:absolute;
 		bottom:100%;
@@ -93,29 +97,23 @@
 		}
 	}
 	>.box-message{
-		color:#fff;
-		width:80%;
-		margin-left:10%;
-		background-color:#929494;
-		border-radius:5px;
-		margin-top:260px;
+		transition: bottom .3s;		
+		color:#4a4444;
+		width:100%;
+		background-color:#efefef;
 		z-index:15;
 		position:absolute;
-		bottom:40px;
+		bottom:100%;
+
+		&.is-visible{
+			bottom:0px;
+		}
 
 		>.sub-box-message{
 			padding:10px 40px 10px 40px;
 			>h2{
 				text-align: center;
 			}
-		}
-		&.is-hangout{
-			-webkit-transition: opacity 3s ease-in-out;
-			-moz-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			-o-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
-			opacity: 0;		
 		}
 	}
 	>.box-backdrop{

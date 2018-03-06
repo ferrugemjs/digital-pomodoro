@@ -3,8 +3,10 @@ template
 	require(from="../fashion-clock/fashion-clock")
 	.pomodoro-clock(style="${'background: linear-gradient(to bottom, '+this.primaryColor+', '+this.secondaryColor+')'}")
 		.pomodoro-header
-			h2.product-name DigiPomodoro
-		.box-clock(click.trigger="this.refresh({isControlVisible:true})")
+			h2.product-name 
+				a.toggle-menu(style="font-weight:bolder" click.trigger="this.refresh({isControlVisible:true})") &#9776;
+				| DigiPomodoro
+		.box-clock
 			fashion-clock(
 				minutes="${59 - this.minutes}"
 				seconds="${59 - this.seconds}"
@@ -22,16 +24,16 @@ template
 				label
 					input(type="color" value="${this.secondaryColor}" change.bind="this.secondaryColor")
 					span Secondary color
-				label(style="text-align:right;font-size:10px")
-					| DigiPomodoro v-1.1.1
-		.box-message(if="this.isNotifying" click.trigger="this.reStart")
+		div(class="${'box-message '+(this.isNotifying ? 'is-visible' : '')}" click.trigger="this.reStart")
 			.sub-box-message 
 				h2 ${this.message}
-				audio(autoplay)
+				audio(if="this.isNotifying" autoplay)
 					source(src="assets/computer-magic.mp3" type="audio/mpeg")
-		.box-backdrop(if="this.isControlVisible"  click.trigger="this.refresh({isControlVisible:false})")
+		.box-backdrop.box-control-backdrop(if="this.isControlVisible"  click.trigger="this.refresh({isControlVisible:false})")
+		.box-backdrop.box-message-backdrop(if="this.isNotifying"  click.trigger="this.reStart")
 		.pomodoro-footer
-			| DigiPomodoro is made with 
-			a(href="https://ferrugemjs.github.io/home-page/") ferrugemjs
+			h5
+				| DigiPomodoro 1.2.0 is made with 
+				a(href="https://ferrugemjs.github.io/home-page/") ferrugemjs
 
 		
