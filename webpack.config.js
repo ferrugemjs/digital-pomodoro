@@ -1,7 +1,8 @@
 var path = require('path');
 module.exports = {
+    mode:'development',
     entry: {    
-    	app:['es6-shim','whatwg-fetch','ferrugemjs/bootstrapper']
+    	app:['es6-shim','whatwg-fetch','./app/main.js']
     },
     output: {
         path: __dirname+'/public', 
@@ -13,7 +14,7 @@ module.exports = {
         port: 3333
     },
     module: {
-        loaders: [
+        rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
@@ -51,11 +52,9 @@ module.exports = {
 		]
     }
 	,resolve: {
-		extensions: [".js",".pug"]
+		extensions: ['.js','.pug']
 		,alias:{    		
-			"app":__dirname + '/app'
-			,"root_app":__dirname + '/app'
-			,"ferrugemjs":"ferrugemjs/dist/core"
+			'@':__dirname + '/app'
 		}    
 	}
 }

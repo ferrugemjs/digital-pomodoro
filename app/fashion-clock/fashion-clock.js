@@ -13,7 +13,7 @@ export class FashionClock{
 	secondsToPercent(){
 		return this.seconds * 1.66;
 	}
-	attributeChangedCallback(attr,oldVl,newVl){
+	attributeChanged(attr,oldVl,newVl){
 		if(attr === 'minutes' && this.minutes !== Number(newVl)){
 			this.minutes = Number(newVl);
 		};

@@ -50,19 +50,19 @@ export class PomodoroClock{
 		}
 		this.refresh();
 	}
-	attributeChangedCallback( attrName, oldVal, newVal ){
+	attributeChanged( attrName, oldVal, newVal ){
 		if(attrName !== "isControlVisible"){
 			this.setCookie(`configured-${attrName.toLowerCase()}`,newVal,90);
 		} 		
 	}
-	connectedCallback(){
+	attached(){
 		this.start();
 		//not ask for permision any time to user
 		if(!Push.default.Permission.has() || Push.default.Permission.get() ==! Push.default.Permission.DENIED){
 			Push.Permission.request(() => {});
 		}		
 	}
-	disconnectedCallback(){
+	detached(){
 		this.stop();	
 	}
 	reStart(){
