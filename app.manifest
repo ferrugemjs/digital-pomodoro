@@ -3,7 +3,7 @@
   "short_name": "DigiPomodoro",
   "theme_color": "rgba(255,255,255,0)",
   "background_color": "#ffffff",
-  "display": "browser",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "Scope": "./",
   "start_url": "./",
